@@ -3,10 +3,10 @@
 <table>
 <tr>
 <td>
-  <img src="http://firmino.somee.com/static/img/printAndroidAddressApp.png" width="200" height="360">
+  <img src="http://firmino.somee.com/static/img/printAndroidAddressApp.png" width="180" height="300">
 </td>
 <td>
-  <img src="http://firmino.somee.com/static/img/printAndroidAddressApp2.png" width="200" height="360">
+  <img src="http://firmino.somee.com/static/img/printAndroidAddressApp2.png" width="180" height="300">
 </td>
 </tr>
 </table>
