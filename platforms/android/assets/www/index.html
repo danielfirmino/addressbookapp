@@ -1,0 +1,19 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="bs/js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <link href="bs/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/sweetalert-dev.js"></script>
+    <link href="css/sweetalert.css" rel="stylesheet" />
+    <script src="js/contactApp.js"></script>
+</head>
+<body ng-app="contactApp" ng-controller="contactCtrl as c" style="background-image: url('img/background.jpg');background-repeat:no-repeat;background-size:cover">
+    <div ng-include="'header.html'"></div>
+    <div list-Contact></div>
+    <form-Contact></form-Contact>
+    <div style="position: fixed; bottom:20px;right:20px;cursor:pointer" ng-click="newContact();">
+    <img src="img/add-contact.png" width="50" height="50" alt="New Contact" title="New Contact"/></div>
+</body>
+</html>

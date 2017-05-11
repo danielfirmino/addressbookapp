@@ -1,0 +1,47 @@
+﻿<!-- Modal -->
+<div id="modalContact" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><b>{{contact.IdContact!=null?"Editing Contact":"New Contact"}}:</b> {{contact.Name}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-danger" ng-hide="!((formContact.Name.$error.required && formContact.Name.$touched) || (formContact.Phone.$error.required && formContact.Phone.$touched) || (formContact.Email.$touched && formContact.Email.$invalid))">
+                    <p ng-hide="!formContact.Name.$error.required">Name is required </p>
+                    <p ng-hide="!formContact.Phone.$error.required">Phone is required </p>
+                    <p ng-hide="!(formContact.Email.$touched && formContact.Email.$invalid)">Invalid E-mail </p>    
+                </div>
+                <form name="formContact">
+                    <input type="hidden" ng-model="contact.id" />
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <label>Name:</label>
+                            <input type="text" class="form-control" name="Name" ng-model="contact.name"  required/>
+                        </li>
+                        <li class="list-group-item">
+                            <label>Phone:</label>
+                            <input type="text" class="form-control" name="Phone" ng-model="contact.phone" required />
+                        </li>
+                        <li class="list-group-item">
+                            <label>E-mail:</label>
+                            <input type="email" class="form-control" name="Email" ng-model="contact.email" />
+                        </li>                       
+                        <li class="list-group-item">
+
+                            <input type="button" value="Delete" class="form-control  btn-danger" ng-hide="contact.id==null" ng-click="deleteContact();" />
+                            <input type="button" value="Save" class="form-control btn-default btn-success" ng-click="saveContact();" ng-hide="formContact.Name.$error.required || formContact.Phone.$error.required || (formContact.Email.$touched && formContact.Email.$invalid) " />
+
+                        </li>
+                    </ul>
+                </form>
+        </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>

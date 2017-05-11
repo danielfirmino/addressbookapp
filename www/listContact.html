@@ -1,0 +1,5 @@
+﻿<div style="padding:10px" id="divListContact">
+    <ul class="list-group" ng-repeat="contact in myContacts track by $index">
+        <li class="list-group-item" ng-click="editContact(contact, $index)" style="cursor:pointer" data-toggle="modal" data-target="#modalContact">{{contact.name}}</li>
+    </ul>
+</div>
