@@ -1,4 +1,4 @@
-# Address Book App: A Mobile App sample developed with Apache Cordova
+<# Address Book App: A Mobile App sample developed with Apache Cordova
 <p><img src="http://cordova.apache.org/static/img/cordova_bot.png" width="50" height="50"> <a href="http://cordova.apache.org/">Apache Cordova</a> is a mobile application development framework that allows you create a mobile app with few steps using only HTML, CSS and Java Script. I developed this App using  Jquery, AngularJS and Bootstrap, but you can use other Frameworks for web development.</P>
 <table>
 <tr>
@@ -26,7 +26,7 @@
 </code></pre></div>
 2.2 - It will generate a directory structure like this:
  <img src="http://firmino.somee.com/static/img/dirapp.png" width="369" height="154">
-2.3 - Go to the folder "www" and delete all the files. 
+2.3 - Go to the folder "www" and delete all the files. <br>
 2.4 - You should include at "www" folder the souce code(eg.: .html, .css and .js) of your app.
  <img src="http://firmino.somee.com/static/img/wwwfolder.png" width="250" height="233">
 <br>
