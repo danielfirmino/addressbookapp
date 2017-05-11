@@ -1,4 +1,4 @@
-<# Address Book App: A Mobile App sample developed with Apache Cordova
+# Address Book App: A Mobile App sample developed with Apache Cordova
 <p><img src="http://cordova.apache.org/static/img/cordova_bot.png" width="50" height="50"> <a href="http://cordova.apache.org/">Apache Cordova</a> is a mobile application development framework that allows you create a mobile app with few steps using only HTML, CSS and Java Script. I developed this App using  Jquery, AngularJS and Bootstrap, but you can use other Frameworks for web development.</P>
 <table>
 <tr>
