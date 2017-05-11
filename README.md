@@ -19,7 +19,7 @@
 </code></pre></div>
 <div><pre><code class="language-bash" data-lang="bash"><p>on Windows:</p>   C:\&gt;npm install -g cordova
 </code></pre></div>
-<br><br>
+<br>
 <h2>2 - Create the App</h2>
 2.1 - Go to the directory where you maintain your source code, and create a cordova project:
 <div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>cordova create addressbookapp com.example.addressbookapp "Address Book App"
@@ -29,9 +29,23 @@
 2.3 - Go to the folder "www" and delete all the files. 
 2.4 - You should include at "www" folder the souce code(eg.: .html, .css and .js) of your app.
 <image here>
-<br><br>
+<br>
 <h2>3- Add Platforms</h2>
-3.3 - Go to the app directory and run the
+<p>For this example,we will the Android platform, but it is possible build the app for other platforms like IOS. Lear more: at https://cordova.apache.org/docs/en/latest/guide/cli/ </p>
+3.3 - Go to the app directory and run this command:
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>cordova platform add android
+</code></pre></div>
+<br>
+<h2>4 - Build the App</h2>
+4.1 Check the pre-requisites for building. How to:https://cordova.apache.org/docs/en/latest/guide/cli/
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>cordova requirements
+</code></pre></div>
+4.2 Build the app:
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>cordova build
+</code></pre></div>
+4.3 The "apk" android package will be created at:
+..\addressbookapp\platforms\android\build\outputs\apk
+4.4 It's possible to install the ".apk" in your Android device to test it.
 
 
 
