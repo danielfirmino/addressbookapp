@@ -19,6 +19,20 @@
 </code></pre></div>
 <div><pre><code class="language-bash" data-lang="bash"><p>on Windows:</p>   C:\&gt;npm install -g cordova
 </code></pre></div>
+<br><br>
+<h2>2 - Create the App</h2>
+2.1 - Go to the directory where you maintain your source code, and create a cordova project:
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>cordova create addressbookapp com.example.addressbookapp "Address Book App"
+</code></pre></div>
+2.2 - It will generate a directory structure like this:
+<Image here>
+2.3 - Go to the folder "www" and delete all the files. 
+2.4 - You should include at "www" folder the souce code(eg.: .html, .css and .js) of your app.
+<image here>
+<br><br>
+<h2>3- Add Platforms</h2>
+3.3 - Go to the app directory and run the
+
 
 
 
