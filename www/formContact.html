@@ -6,7 +6,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title"><b>{{contact.IdContact!=null?"Editing Contact":"New Contact"}}:</b> {{contact.Name}}</h4>
+                <h4 class="modal-title"><b>{{contact.id!=null?"Editing Contact":"New Contact"}}:</b> {{contact.name}}</h4>
             </div>
             <div class="modal-body">
                 <div class="alert alert-danger" ng-hide="!((formContact.Name.$error.required && formContact.Name.$touched) || (formContact.Phone.$error.required && formContact.Phone.$touched) || (formContact.Email.$touched && formContact.Email.$invalid))">
